@@ -1,12 +1,23 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Home } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <header className="header">
+        <Home className="h-6 w-6" />
+      </header>
+      
+      <section className="section-center">
+        <div>
+          <h1 className="text-4xl font-bold mb-4">Welcome to Your Styled App</h1>
+          <p className="mb-4">This page demonstrates the custom styles you requested.</p>
+          <a href="https://example.com" className="underline">Example Link</a>
+        </div>
+      </section>
+      
+      <footer className="footer">
+        <p>&copy; 2024 Your Company Name</p>
+      </footer>
     </div>
   );
 };
